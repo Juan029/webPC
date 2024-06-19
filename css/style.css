@@ -102,13 +102,67 @@ header{
     transition: all 0.3s ease;
 }
 
-#iconoMenu{
+#iconoMenu {
     font-size: 32px;
     color: var(--bg-color);
     z-index: 100001;
     cursor: pointer;
     display: none;
 }
+
+
+/*Para que se muestre en el celular y sea responsivo el menu hamburguesa*/
+
+
+@media (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--bg-color);
+        padding: 1rem 0;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    #iconoMenu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-icons i:hover{
     transform: scale(1.1);

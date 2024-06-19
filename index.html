@@ -347,7 +347,23 @@
 
 
 
-
+    <script>
+        const iconoMenu = document.getElementById('iconoMenu');
+        const navList = document.querySelector('.navlist');
+        const navLinks = document.querySelectorAll('.navlist a');
+    
+        iconoMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+            });
+        });
+    </script>
+    
+    
     <script src="/js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
