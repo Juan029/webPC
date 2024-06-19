@@ -520,7 +520,12 @@ header.sticky{
     height: auto;
     max-width: 70px;
     margin: 0 22px;
- 
+
+}
+
+.social img:hover{
+    transform: scale(1.18) ;
+    transition: all 0.4s ease;
 
 }
 
